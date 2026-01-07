@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid blue;
+            border-radius: 10px;
+        }
+        label {
+            color: teal;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        input[type="email"] {
+            color: peru;
+            border: 2px solid blue;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        input[type="password"] {
+            color: red;
+            border: 2px solid green;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            color: white;
+            background-color: palevioletred;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <form >
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
