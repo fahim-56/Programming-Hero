@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container {
+            display: flex;
+            border: 10px solid black;
+            height: 300px;
+            padding: 10px;
+            margin: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box_gap {
+            display: flex;
+            gap: 30px;
+            padding: 10px;
+            margin: 10px;
+        }
+        .boxFlex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+            margin: 10px;            
+        }
+        .ch {
+            background-color: lightseagreen;
+            border: 2px solid orange;
+            padding: 15px;   
+            text-align: center;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex Box Example</h1>
+    <div style="display: flex;">
+        <div style="background-color: lightblue; padding: 20px; margin: 5px;">Item 1</div>
+        <div style="background-color: lightgreen; padding: 20px; margin: 5px;">Item 2</div>
+        <div style="background-color: lightcoral; padding: 20px; margin: 5px;">Item 3</div>
+    </div>
+
+    <div class="container">
+        <div style="background-color: lightblue; padding: 20px; margin: 5px; height: 80px;">Item A</div>
+        <div style="background-color: lightpink; padding: 20px; margin: 5px; height: 80px;">Item B</div>
+        <div style="background-color: lightgray; padding: 20px; margin: 5px; height: 80px;">Item C</div>
+
+    </div>
+
+    <div class="box_gap">
+        <div style="background-color: lightseagreen;padding: 20px; margin: 10px">Box 1</div>
+        <div style="background-color: lightcyan;  padding: 20px; margin: 10px;">Box 2</div>
+        <div style="background-color: lightcoral; padding: 20px; margin: 10px;">Box 3</div>
+    </div>
+
+
+    <!-- .className${insideContent$}*NumberOfdivs -->
+    <!-- Here $ is a shortcut to create multiple divs with class names in VS Code
+     Example: .ch${box$}*20 will create 20 divs with class names ch1, ch2, ch3,...ch20 and inside content box1, box2, box3,...box20
+     Result: -->
+
+    <div class="boxFlex">
+     <div class="ch">box1</div>
+     <div class="ch">box2</div>
+     <div class="ch">box3</div>
+     <div class="ch">box4</div>
+     <div class="ch">box5</div>
+     <div class="ch">box6</div>
+     <div class="ch">box7</div>
+     <div class="ch">box8</div>
+     <div class="ch">box9</div>
+     <div class="ch">box10</div>
+     <div class="ch">box11</div>
+     <div class="ch">box12</div>
+     <div class="ch">box13</div>
+     <div class="ch">box14</div>
+     <div class="ch">box15</div>
+     <div class="ch">box16</div>
+     <div class="ch">box17</div>
+     <div class="ch">box18</div>
+     <div class="ch">box19</div>
+     <div class="ch">box20</div>
+
+    </div>
+    >
+
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: peachpuff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: purple;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: palegreen;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        .card img {
+            border-radius: 50%;
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .cards :hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Meet Our Team</h1>
+    <div class="cards">
+        <div class="card">
+            <img src="images/img1.jpg" alt="Team Member 1" style="width:100%">
+            <h2>Mr. Lion</h2>
+            <p class="title">CEO & Founder</p>
+            <p>Mr. Lion is the visionary behind our company.</p>
+        </div>
+        <div class="card">
+            <img src="images/img3.jpg" alt="Team Member 2" style="width:100%">
+            <h2>Mr. Cub</h2>
+            <p class="title">CTO</p>
+            <p>Mr. Cub leads our technology department.</p>
+        </div>
+        <div class="card">
+            <img src="images/img4.jpg" alt="Team Member 3" style="width:100%">
+            <h2>Mr. Bear</h2>
+            <p class="title">CFO</p>
+            <p>Mr. Bear manages our financial operations.</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Form Field</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Explore Form Field</legend>
+            <label for="explore-input">Explore Input:</label>
+            <input type="text" id="explore-input" name="explore-input" placeholder="Type something...">
+        </fieldset>
+
+        <fieldset>
+            <legend>Select One of Them</legend>
+            <label for="single-select">Choose an option:</label>
+            <select id="single-select" name="single-select">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Select Just One</legend>
+            <input type="radio" name="option" id="option-a">
+            <label for="option-a">Option A</label><br>
+            <input type="radio" name="option" id="option-b">
+            <label for="option-b">Option B</label><br>
+            <input type="radio" name="option" id="option-c">
+            <label for="option-c">Option C</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Select All That Apply</legend>
+            <input type="checkbox" name="feature1" id="feature1">
+            <label for="feature1">Feature 1</label><br>
+            <input type="checkbox" name="feature2" id="feature2">
+            <label for="feature2">Feature 2</label><br>
+            <input type="checkbox" name="feature3" id="feature3">
+            <label for="feature3">Feature 3</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Provide Additional Comments</legend>
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+</body>
+
+</html>
