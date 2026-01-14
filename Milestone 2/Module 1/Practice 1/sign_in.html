@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        main form {
+            border: 10px solid rgb(53, 52, 52);
+            box-shadow: 10px 10px lightblue;
+            border-radius: 20px;
+            width: 75%;
+            height: 500px;
+            text-align: center;
+            margin: 100px auto;
+        }
+
+        #email {
+            height: 50px;
+            width: 70%;
+            margin: 20px;
+        }
+
+        #email:focus {
+            color: blue;
+            border: 4px solid brown;
+        }
+
+
+        #password {
+            height: 50px;
+            width: 70%;
+            margin: 20px;
+        }
+
+        #password:focus {
+            color: blue;
+            border: 4px solid brown;
+        }
+
+        .btn {
+            background-color: rgb(96, 201, 236);
+            border: none;
+            height: 50px;
+            width: 200px;
+            color: antiquewhite;
+            font-size: 2em;
+            border-radius: 10px;
+        }
+
+        .btn:hover {
+            color: black;
+            background-color: rgb(137, 233, 233);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav1">
+                <a href="./index.html">
+                    <h1>Home</h1>
+                </a>
+                <a href="">
+                    <h1>Contact</h1>
+                </a>
+                <a href="">
+                    <h1>About</h1>
+                </a>
+                <a href="">
+                    <h1>Blog</h1>
+                </a>
+            </div>
+            <div class="nav2">
+                <a href="./sign_up.html">
+                    <h1>Sign up</h1>
+                </a>
+                <a href="./sign_in.html">
+                    <h1>Sign in</h1>
+                </a>
+                <a href="./profile.html">
+                    <h1><i class="fa-solid fa-user"></i></h1>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form action="">
+            <h1>Sign In</h1>
+            <label for="email"></label>
+            <input id="email" type="email" placeholder="Enter Email" required>
+
+            <label for="password"></label>
+            <input type="password" name="" id="password" placeholder="Enter Password" required>
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>

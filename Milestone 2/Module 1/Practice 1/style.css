@@ -1,0 +1,30 @@
+  nav {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  nav .nav1 {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+  }
+
+  nav .nav2 {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+  }
+
+  nav a {
+      text-decoration: none;
+      color: gray;
+  }
+
+  a:hover {
+      color: darkgoldenrod;
+      background-color: beige;
+      border-radius: 20px;
+      padding: 5px;
+  }
+
+  

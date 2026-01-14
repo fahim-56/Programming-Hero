@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-axis</title>
+    <style>
+        img {
+            height: 200px;
+            width: 800px;
+            position: relative;
+        }
+
+        .img1 {
+            top: -100px;
+            z-index: 1;
+            /* if z-index lower it goes behind  */
+
+        }
+
+        .img2 {
+            top: 30px;
+            z-index: 5;
+            /* if z-index higher it comes forword  */
+
+        }
+
+        h1::after {
+            content: '.pdf';
+            color: brown;
+        }
+
+        h1::before {
+            content: 'icon:  ';
+            color: aqua;
+
+        }
+        p::first-letter{
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Z-axis</h1>
+    <img class="img2" src="images/boat.jpg" alt="">
+    <img class="img1" src="images/Water.jpg" alt=""><br>
+
+    <br><br>
+    <br><br>
+    <h1>head-1</h1>
+    <h1>head-2</h1>
+    <h1>head-3</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio perferendis nobis voluptate, soluta illum
+        odio asperiores necessitatibus vel aliquam placeat?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, iusto provident. Officiis sequi voluptatum
+        omnis ratione velit perferendis, ex temporibus?</p>
+    <p>Velit ipsa doloribus, sequi esse laborum nulla labore atque neque vel totam odio dolores recusandae quasi eius
+        nam. Ex, aperiam?</p>
+    <p>Iste provident totam deleniti ea ab assumenda amet quaerat et accusantium laboriosam labore odit earum vitae,
+        blanditiis quam aperiam delectus.</p>
+
+</body>
+
+</html>

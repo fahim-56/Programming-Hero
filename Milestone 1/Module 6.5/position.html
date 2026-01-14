@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        img {
+            border: 2px solid blue;
+            height: 300px;
+            width: 300px;
+        }
+
+        /* .div2 {
+            position: relative;
+            left: 200px;
+            bottom: 200px;
+        } */
+
+        /* .div2 {
+            position: sticky;
+            left: 200px;
+            bottom: 200px;
+        } */
+        .div2 {
+            position: fixed;
+            left: 200px;
+            bottom: 200px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>CSS Positions</h1>
+    <ol>
+        <li>Static</li>
+        <li>Relative (Changes relative to its current positions. Don't lose its own position)</li>
+        <li>Absolute(Changes relative to its absolute positions/from the begging of page/ parent position. Loose its own
+            positions.)</li>
+        <li>Fixed(Fixed into a common position of screen.Loose its own
+            positions)</li>
+        <li>Sticky(Fixed into a common position of screen until it comes to its own position.Doesn't loose its own
+            positions)</li>
+    </ol>
+
+    <div class="div1">
+        <img src="images/Formal Picture.jpg" alt="">
+    </div>
+    <br><br>
+    <div class="div2">
+        <img src="images/Md Fahim Chowdhury.jpg" alt="">
+    </div>
+    <br><br>
+    <div class="div1">
+        <img src="images/Formal Picture.jpg" alt="">
+    </div>
+    <br><br>
+    <div class="div1">
+        <img src="images/Formal Picture.jpg" alt="">
+    </div>
+    <br><br>
+    <div class="div1">
+        <img src="images/Formal Picture.jpg" alt="">
+    </div>
+</body>
+
+</html>
