@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 200px) 50px 50px;
+        }
+
+        .box {
+            background-color: cadetblue;
+            padding: 10px;
+        }
+
+        .left {
+            grid-row: span 5;
+            grid-column: span 1;
+        }
+
+        .footer {
+            grid-column: span 3;
+        }
+
+        @media screen and (max-width:720px) {
+            .container {
+                display: grid;
+                gap: 20px;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(5, 200px) 50px 50px;
+            }
+
+            .box,
+            .left,
+            .footer {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box left">.</div>
+        <div class="box">.</div>
+        <div class="box">.</div>
+        <div class="box">.</div>
+        <div class="box">.</div>
+        <div class="box">.</div>
+        <div class="box">.</div>
+        <div class="box">.</div>
+        <div class="box">.</div>
+        <div class="box">.</div>
+        <div class="box footer">.</div>
+        <div class="box footer">.</div>
+    </div>
+</body>
+
+</html>

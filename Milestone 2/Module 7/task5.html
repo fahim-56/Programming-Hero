@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 5</title>
+    <style>
+        .cards {
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .card {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 10px;
+            gap: 100px;
+        }
+
+        img {
+            width: 600px;
+        }
+
+        .cards .card .text {
+            max-width: 100%;
+        }
+
+        @media screen and (max-width:800px) {
+            .card {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                max-width: 800px;
+            }
+
+            .card2 {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .cards .card .text {
+                max-width: 800px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <div class="card">
+            <div class="image"><img src="./images/setMenu4.jpg" alt=""></div>
+            <div class="text">
+                <h1>Heading 1</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam animi amet ad officia id
+                    et numquam fugit doloribus. Animi placeat ipsa ducimus beatae maiores qui quae necessitatibus modi
+                    temporibus? Eos consectetur magni ad repellendus saepe deserunt unde reprehenderit eveniet impedit
+                    atque
+                    doloremque, ratione dolor quae culpa provident? Sunt, id vel. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Fuga harum debitis eius vel neque nobis consequatur accusamus ullam laboriosam?
+                    Labore illum dignissimos similique, deserunt voluptates distinctio eos cumque ea ad ipsam debitis
+                    commodi optio temporibus modi obcaecati officiis rem possimus dolorum rerum ipsum? Quisquam, velit,
+                    fuga, nostrum tempore rem excepturi voluptatibus incidunt aut ipsam quod eum totam saepe earum sunt
+                    cum commodi voluptas sapiente. Quis quisquam, delectus pariatur impedit recusandae nemo consectetur
+                    reprehenderit eum doloremque numquam ipsam nesciunt omnis beatae ratione maiores. Voluptatum, nam
+                    corrupti dolore, tenetur alias repellat nihil porro praesentium laboriosam culpa vero, quo
+                    repellendus distinctio quidem ut.</p>
+            </div>
+        </div>
+        <div class="card card2">
+            <div class="text">
+                <h1>Heading 2</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae voluptatem quia
+                    nobis ad fugiat doloribus, natus aspernatur molestias! Eos dignissimos consequuntur architecto
+                    impedit.
+                    Exercitationem officia minima reprehenderit nemo, consequuntur molestiae nesciunt voluptatum
+                    assumenda
+                    quod vitae eligendi eius quidem pariatur in necessitatibus quaerat praesentium maiores. Eos
+                    cupiditate
+                    ipsa illum laborum! Veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                    quas vitae optio architecto sunt. Ducimus ullam optio debitis, rem delectus quis, tempora ab
+                    laboriosam numquam quidem in eum fugiat dolor officia quisquam. Dolores deleniti veniam iste
+                    obcaecati quasi consequatur nulla soluta. Suscipit, id ipsa. Sint odit corrupti labore praesentium.
+                    Inventore dolore quas libero explicabo modi magnam, in molestias delectus nulla iure sed facere
+                    numquam laboriosam rerum sapiente atque tempore fugit eum illo aliquam doloribus saepe quo! Eos fuga
+                    asperiores ipsam molestias itaque, aperiam temporibus consectetur error vel cum sequi qui corrupti
+                    rerum aliquid doloribus repellat culpa distinctio illo labore dolorem.</p>
+            </div>
+            <div class="image"><img src="./images/setMenu3.jpg" alt=""></div>
+
+        </div>
+    </div>
+</body>
+
+</html>

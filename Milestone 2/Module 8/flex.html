@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 30px;
+
+        }
+
+        .box {
+            color: aliceblue;
+            background-color: teal;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .manybox {
+            gap: 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .boxes {
+            background-color: tomato;
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 720px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .boxes {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Let's Explore Flex
+    </h1>
+
+    <div class="container">
+        <div class="box">
+            <h1>Box-1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates vel eius est? Magnam vero
+                consequuntur, illo ratione explicabo aliquid asperiores vitae repudiandae? Facilis, soluta blanditiis
+                cumque non dignissimos in vitae quae quis fugit cupiditate ratione voluptas, est ab. Eum ex veniam
+                deleniti ea perferendis fugiat cumque, distinctio rerum exercitationem beatae.</p>
+        </div>
+        <div class="box">
+            <h1>Box-2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eum beatae quasi quibusdam, iure
+                ea dolores dolore necessitatibus laboriosam, eveniet temporibus vitae ullam id incidunt provident fuga
+                nihil! Porro debitis, necessitatibus ad assumenda ullam consectetur eaque vero quidem. Provident maiores
+                ab quibusdam quam! Praesentium veniam eaque excepturi id suscipit iusto culpa tempore, minima debitis
+                perspiciatis?</p>
+        </div>
+    </div>
+
+    <div class="manybox">
+        <div class="boxes">box-1</div>
+        <div class="boxes">box-2</div>
+        <div class="boxes">box-3</div>
+        <div class="boxes">box-4</div>
+        <div class="boxes">box-5</div>
+        <div class="boxes">box-6</div>
+        <div class="boxes">box-7</div>
+        <div class="boxes">box-8</div>
+        <div class="boxes">box-9</div>
+        <div class="boxes">box-10</div>
+        <div class="boxes">box-11</div>
+        <div class="boxes">box-12</div>
+        <div class="boxes">box-13</div>
+        <div class="boxes">box-14</div>
+        <div class="boxes">box-15</div>
+        <div class="boxes">box-16</div>
+        <div class="boxes">box-17</div>
+        <div class="boxes">box-18</div>
+        <div class="boxes">box-19</div>
+        <div class="boxes">box-20</div>
+    </div>
+</body>
+
+</html>

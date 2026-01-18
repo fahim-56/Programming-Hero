@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galary</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(6, 200px);
+            gap: 5px
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .image1 {
+            grid-column: span 6;
+            grid-row: span 2;
+        }
+
+        .image2 {
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+
+        .image3 {
+            grid-row: span 1;
+            grid-column: span 2;
+        }
+
+        .image4 {
+            grid-row: span 1;
+            grid-column: span 1;
+            width: 100%;
+            height: 100%;
+        }
+
+        .image5 {
+            grid-row: span 1;
+            grid-column: span 1;
+            width: 100%;
+            height: 100%;
+        }
+
+        .div2 .image5 {
+            margin-top: 5px;
+        }
+
+        @media screen and (max-width:720px) {
+            /* .container {
+                display: block;
+            } */
+
+            .container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 5px
+            }
+
+            .image1,
+            .image2,
+            .image3,
+            .image4,
+            .image5 {
+                grid-row: span 1;
+                grid-column: span 1;
+            }
+
+            /* Over writing the n2 image  */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image1"><img src="./images/A.jpg" alt=""></div>
+        <div class="image2"><img src="./images/B.jpg" alt=""></div>
+        <div class="image2"><img src="./images/C.jpg" alt=""></div>
+        <div class="image3"><img src="./images/D.jpg" alt=""></div>
+        <div class="image3"><img src="./images/E.jpg" alt=""></div>
+        <div class="image2"><img src="./images/F.jpg" alt=""></div>
+        <div class="div2">
+            <div class="image4"><img src="./images/G.jpg" alt="n1"> </div>
+            <div class="image5"><img src="./images/G.jpg" alt="n2"> </div>
+        </div>
+        <div class="div2">
+            <div class="image4"><img src="./images/G.jpg" alt="n3"> </div>
+            <div class="image5"><img src="./images/G.jpg" alt="n4"> </div>
+        </div>
+        <div class="image2"><img src="./images/I.jpg" alt=""></div>
+    </div>
+
+</body>
+
+</html>

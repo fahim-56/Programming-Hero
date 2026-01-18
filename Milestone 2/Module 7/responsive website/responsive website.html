@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        body {
+            border: 4px solid blue;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .image {
+            display: flex;
+            width: 100%;
+        }
+
+        img {
+            width: 500px;
+        }
+
+        @media screen and (max-width:800px) {
+            .image {
+                flex-direction: column;
+
+            }
+
+            img {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <h1>
+            <li>
+                Meta Tag
+                <p>
+                    meta name="viewport" content="width=device-width, initial-scale=1.0">
+                </p>
+            </li>
+        </h1>
+        <h1>
+            <li>CSS relative unit</li>
+            <p>use 100% or vice versa</p>
+        </h1>
+        <h1>
+            <li>Body max width </li>
+        </h1>
+        <h1>
+            <li></li>
+        </h1>
+        <h1>
+            <li></li>
+        </h1>
+        <h1>
+            <li></li>
+        </h1>
+        <h1>
+            <li></li>
+        </h1>
+    </ol>
+    <div class="image">
+        <div class="image1">
+            <img src="../images/setMenu1.jpg" alt="">
+        </div>
+        <div class="image1">
+            <img src="../images/setMenu11.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
