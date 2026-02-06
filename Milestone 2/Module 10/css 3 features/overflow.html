@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        #boxes {
+            justify-items: center;
+        }
+
+        .box {
+            width: 300px;
+            height: 100px;
+            border: 3px solid salmon;
+            text-align: center;
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            overflow: auto;
+            overflow-x: hidden;
+            margin-top: 50px;
+            padding: 50px;
+        }
+
+        .text {
+            width: 500px;
+            white-space: nowrap;
+            /* overflow: hidden; */
+            /* overflow: auto; */
+            overflow: scroll;
+            overflow-y: hidden;
+            /* text-overflow:ellipsis; */
+        }
+    </style>
+</head>
+
+<body>
+    <section id="boxes">
+        <div >
+            <p class="text"
+                title="
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo atque natus, voluptatibus saepe, veniam, eius minima distinctio quaerat excepturi sed corporis veritatis error velit nobis? Amet ullam molestias veritatis tempora.">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In ducimus, rerum doloribus mollitia deserunt
+                rem
+                quibusdam voluptatem, quia, accusamus nihil odio voluptatibus! Eaque vel totam laborum quaerat? Possimus
+                debitis, qui culpa fuga pariatur ab velit modi voluptate ipsum accusantium repellat vel inventore iure
+                dicta
+                rerum, voluptas tempore enim totam doloremque!</p>
+        </div>
+        <div class="box">
+            <h3>My Box-1</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia odio expedita similique temporibus dolores
+                nemo! Odio recusandae dolor iusto ut tenetur ratione quos? Eveniet, magnam vero error neque reiciendis
+                quam deserunt perspiciatis iusto praesentium quisquam voluptates laboriosam illo unde laudantium dolore
+                voluptatum velit autem ea repellat commodi. Quis itaque excepturi nobis deserunt consectetur, aperiam
+                labore praesentium, doloremque delectus odio facere!</p>
+        </div>
+        <div class="box">
+            <h3>My Box-2</h3>
+            <p>Quos quas, reprehenderit error enim sit beatae esse natus provident perspiciatis nulla ex tenetur aut
+                laboriosam cum officiis laborum dolorem quia nesciunt distinctio facere! Cupiditate quaerat fugiat nihil
+                ipsa temporibus, reiciendis quae odit molestiae iusto facilis nesciunt quasi soluta ex illo natus id,
+                sed eius blanditiis mollitia nemo rem eligendi eaque. Quis nostrum a quidem. Voluptates a in molestiae?
+                Officia!</p>
+        </div>
+        <div class="box">
+            <h3>My Box-3</h3>
+            <p>Fuga, libero voluptas..
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>

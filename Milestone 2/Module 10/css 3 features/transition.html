@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(242, 13, 59);
+            /* property name // duration // easing function // delay */
+            transition: width 5s linear 2s, transform 2s;
+        }
+
+        .box:hover {
+            width: 500px;
+            background-color: pink;
+            transform: rotate(360deg) translateX(100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">box-1</div>
+    <div class="box">box-2</div>
+    <div class="box">box-3</div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformer</title>
+    <style>
+        body {
+            justify-items: center;
+        }
+
+        .cont,
+        .inner {
+            height: 200px;
+            width: 200px;
+        }
+
+        .cont {
+            background-color: aqua;
+        }
+
+        .inner {
+            background-color: bisque;
+            /* transform: scale(.5); */
+            /* transform: scale(0.5, 0.75); */
+            /* transform: rotate(45deg); */
+            /* transform: scale(.5) rotate(45deg); */
+        }
+
+        .inner:hover {
+            transform: scale(0.5) rotate(45deg) translateX(200px);
+             
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transformer</h1>
+    <div class="cont">
+        <div class="inner">inner-1</div>
+    </div>
+    <div class="cont">
+        <div class="inner">inner-2</div>
+    </div>
+    <div class="cont">
+        <div class="inner">inner-3</div>
+    </div>
+</body>
+
+</html>

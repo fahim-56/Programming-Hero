@@ -1,0 +1,61 @@
+body {
+    color: white;
+    background-color: rgba(17, 27, 60, 1);
+}
+
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid rgba(43, 127, 255, 0.2);
+}
+
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar .menu {
+    text-align: left;
+    flex: 1;
+}
+
+.sidebar .menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar button {
+    color: red;
+    background-color: rgba(17, 27, 60, 1);
+    border: none;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.sidebar .image1 {}
+
+.right {
+    grid-area: right;
+}
+
+.full-body {
+    display: grid;
+    grid-template-areas: "sidebar right right right rightright";
+}
+
+.right nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.right nav img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}

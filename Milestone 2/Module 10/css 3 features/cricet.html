@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's play cricket</title>
+    <style>
+        .field {
+            border: 3px solid green;
+            height: 700px;
+        }
+
+        .bat {
+            transition: transform 0.1s ease-out;
+        }
+
+        .ball {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            background-color: red;
+            margin-left: 670px;
+            margin-bottom: -50px;
+            transition: transform 3s ease-out 0.2s;
+        }
+
+        .field:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+
+
+
+        .field:hover .ball {
+            transform: translate(850px, -500px) ;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="field">
+        <img src="./images/bat.png" alt="" class="bat">
+        <div class="ball">
+
+        </div>
+    </div>
+
+</body>
+
+</html>

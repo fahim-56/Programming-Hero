@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        @keyframes yellowBall {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 1100px;
+                background-color: aqua;
+            }
+        }
+
+
+        body {
+            justify-items: center;
+        }
+
+        .stage {
+            border: 3px solid steelblue;
+            height: 700px;
+            width: 1200px;
+        }
+
+        .ball {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 50%;
+            margin-top: 280px;
+
+            position: relative;
+            /* animation: yellowBall 2s ease-in-out 1s 5 alternate; */
+            animation: yellowBall 2s ease-in-out 1s infinite alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stage">
+        <div class="ball"> </div>
+    </div>
+
+</body>
+
+</html>

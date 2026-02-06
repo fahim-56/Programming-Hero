@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise Animation</title>
+    <style>
+        @keyframes rising {
+            0% {
+                top: 600px;
+                left: 0px;
+            }
+
+            25% {
+                top: 450px;
+                left: 250px;
+                background-color: rgb(255, 225, 1);
+            }
+
+            50% {
+                top: 300px;
+                left: 500px;
+                background-color: yellow;
+            }
+
+            60% {
+                top: 300px;
+                left: 650px;
+                background-color: yellow;
+            }
+
+            75% {
+                top: 400px;
+                left: 800px;
+                background-color: rgb(255, 217, 0);
+            }
+
+            100% {
+                top: 600px;
+                left: 1100px;
+                background-color: rgb(249, 85, 25);
+            }
+        }
+
+        body {
+            justify-items: center;
+        }
+
+        .sky {
+            height: 700px;
+            width: 1200px;
+            background-color: aqua;
+        }
+
+        .sun {
+            height: 100px;
+            width: 100px;
+            background-color: orange;
+            border-radius: 50%;
+            position: relative;
+            top: 600px;
+            animation: rising 10s ease 0s infinite alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sky">
+        <div class="sun"></div>
+    </div>
+</body>
+
+</html>
